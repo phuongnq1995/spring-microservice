@@ -12,6 +12,10 @@ endpoints:
 zuul:
   prefix: /api
   routes:
+    auth: 
+      path: /auth/**
+      sensitiveHeaders: 
+      serviceId: auth-service
     account: 
       path: /account/**
       serviceId: account-service
